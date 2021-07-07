@@ -112,7 +112,7 @@
     right: 0;
     border-radius: 35px;
     transform: translateX(100%);
-    transition: 0.5s ease-out all;
+    transition: 0.4s ease-out all;
     background-color: var(--red);
     border: 1.5px solid var(--red);
 
@@ -131,6 +131,20 @@
     font-size: 15px;
     position: relative;
     // z-index: 7;
+  }
+
+  &_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    background-color: var(--red);
+    right: 0px;
+    height: 100%;
+    width: 23%;
+    border-radius: 50%;
+    font-size: 25px;
   }
 }
 
