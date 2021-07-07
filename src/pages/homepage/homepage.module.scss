@@ -92,7 +92,7 @@
 .button {
   margin-top: 15px;
   padding: 16px 70px 16px 35px;
-  border: 1px solid var(--red);
+  border: 1.5px solid var(--red);
   display: inline-flex;
   align-items: center;
   border-radius: 35px;
@@ -114,6 +114,8 @@
     transform: translateX(100%);
     transition: 0.5s ease-out all;
     background-color: var(--red);
+    border: 1.5px solid var(--red);
+
   }
 
   &:hover {

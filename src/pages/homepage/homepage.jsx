@@ -23,7 +23,7 @@ const Homepage = () => {
             pursuing B-tech from NMIT Bangalore. I am very passionate about tech
             related stuffs and always looking to learn new things.
           </p>
-          <a href="#" className={styles.button}>
+          <a href="/" className={styles.button}>
             <span className={styles.button_text}>More About Me</span>
           </a>
         </div>
