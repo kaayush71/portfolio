@@ -1,6 +1,4 @@
 .iconbox {
-  // background-color: var(--red);
-  background: #2b2a2a;
   width: 50px;
   height: 50px;
   display: flex;
@@ -9,17 +7,15 @@
   justify-content: center;
   border-radius: 35px;
   padding: 0px;
-  margin: 10px 0;
-  // margin-left: 100px;
   position: relative;
   transition: all 0.2s ease;
 
   &:hover {
     background-color: var(--red);
+    color: white;
   }
 
   &_icon {
-    // color: white;
     color: #ddd;
     position: absolute;
     pointer-events: none;
@@ -31,8 +27,8 @@
     padding: 0;
     width: 50px;
     height: 50px;
-    transition: all 1s ease-in;
     cursor: pointer;
+    border-radius: 50%;
 
     &:hover h2 {
       z-index: 2;
@@ -52,18 +48,15 @@
       color: rgb(255, 255, 255);
       line-height: 50px;
       font-weight: 500;
-      //   transition: all 0.3s;
       border-radius: 30px;
       text-transform: uppercase;
       padding: 0 25px 0 30px;
       height: 50px;
       font-size: 15px;
       transition: all 0.2s ease-out;
-      // border-radius: 35px 0 0 35px;
       margin: 0;
 
       &:hover {
-        // z-index: 2;
         opacity: 1;
         right: 27px;
         margin: 0;
@@ -73,20 +66,4 @@
       }
     }
   }
-}
-
-.iconbox_active {
-  background-color: var(--red);
-  // background: #2b2a2a;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  border-radius: 35px;
-  padding: 0px;
-  margin: 10px 0;
-  // margin-left: 100px;
-  position: relative;
 }
