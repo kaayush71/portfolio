@@ -1,0 +1,13 @@
+.dcontainer {
+  width: 70px;
+  //   background: rgb(224, 224, 224);
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  right: 15px;
+  top: 60%;
+  transform: translate(-5%, -50%);
+  z-index: 100;
+}
