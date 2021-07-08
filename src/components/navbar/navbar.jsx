@@ -14,7 +14,7 @@ export default function Navbar() {
           className={styles.link}
           activeClassName={styles.active}
         >
-          <NavbarIcon home text="home" path="/" />
+          <NavbarIcon home text="Home" />
         </NavLink>
         <NavLink
           className={styles.link}
@@ -22,7 +22,7 @@ export default function Navbar() {
           to="/about"
           activeClassName={styles.active}
         >
-          <NavbarIcon user text="user" path="/about" />
+          <NavbarIcon user text="About" />
         </NavLink>
         <NavLink
           className={styles.link}
@@ -30,7 +30,7 @@ export default function Navbar() {
           to="/work"
           activeClassName={styles.active}
         >
-          <NavbarIcon portfolio text="portfolio" path="/work" />
+          <NavbarIcon portfolio text="Portfolio" />
         </NavLink>
 
         <NavLink
@@ -39,7 +39,7 @@ export default function Navbar() {
           to="/contact"
           activeClassName={styles.active}
         >
-          <NavbarIcon contact text="contact" path="/contact" />
+          <NavbarIcon contact text="Contact" />
         </NavLink>
         <NavLink
           className={styles.link}
@@ -47,7 +47,7 @@ export default function Navbar() {
           to="/blog"
           activeClassName={styles.active}
         >
-          <NavbarIcon blog text="blogs" path="/blog" />
+          <NavbarIcon blog text="Blogs" />
         </NavLink>
       </div>
     </section>
