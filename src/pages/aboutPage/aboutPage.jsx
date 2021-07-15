@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './aboutPage.module.scss';
 import { TiArrowRightThick } from 'react-icons/ti';
+import pdf from '../../assets/resume.pdf';
 
 export default function AboutPage() {
   return (
     <div className={styles.about}>
       <div className={styles.title}>
-        <h1 className={styles.heading}>
+        <h1 data-aos="fade-up" className={styles.heading}>
           ABOUT <span className={styles.heading_sub}>ME</span>
         </h1>
         <span className={styles.sub}>Resume</span>
@@ -56,8 +57,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className={styles.button_con}>
-              <a href="/" className={styles.button}>
-                <span className={styles.button_text}>More About Me</span>
+              <a href={pdf} download="resume" className={styles.button}>
+                <span className={styles.button_text}>Download Resume</span>
                 <span className={styles.button_icon}>
                   <TiArrowRightThick />
                 </span>
@@ -65,6 +66,21 @@ export default function AboutPage() {
             </div>
           </div>
           <div className={styles.right}>Hello</div>
+        </div>
+      </div>
+      <hr className={styles.seperator} />
+      {/* ========================================================================== */}
+      <div className={styles.container}>
+        <div className={styles.skills}>
+          <h1 className={styles.skills__title}>My Skills</h1>
+          <div className={styles.skills_wrapper}>
+            <p>A</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+            <p>f</p>
+          </div>
         </div>
       </div>
     </div>

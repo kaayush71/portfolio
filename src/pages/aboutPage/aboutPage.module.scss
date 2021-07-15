@@ -160,3 +160,42 @@
     border: 1px solid var(--red);
   }
 }
+
+.seperator {
+  border: 0;
+  border-top: 1px solid #252525;
+  margin: 90px auto 55px;
+  max-width: 30%;
+}
+
+// ----------------------------------------- Skills -------------------------------------
+
+.skills {
+  height: 100%;
+  padding: 0 1rem;
+  &__title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 31px;
+    font-family: poppins;
+    font-weight: 600;
+  }
+  &_wrapper {
+    background-color: rebeccapurple;
+    // display: flex;
+    // flex-wrap: wrap;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));   
+    // @media only screen and (max-width: 1250px) {
+    //   justify-content: space-evenly;
+    // }
+    &>* {
+      background-color: wheat;
+      margin: 10px;
+      // flex: 0 1 260px;
+    }
+    // text-align: start;
+  }
+}
