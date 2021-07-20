@@ -65,7 +65,24 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-          <div className={styles.right}>Hello</div>
+          <div className={styles.right}>
+            <div className={styles.right_card}>
+              <h3 className={styles.right_card__heading}>15</h3>
+              <p className={styles.right_card__text}>Completed Projects</p>
+            </div>
+            <div className={styles.right_card}>
+              <h3 className={styles.right_card__heading}>2</h3>
+              <p className={styles.right_card__text}>years of experience</p>
+            </div>
+            <div className={styles.right_card}>
+              <h3 className={styles.right_card__heading}>5</h3>
+              <p className={styles.right_card__text}>Hackathons participated</p>
+            </div>
+            <div className={styles.right_card}>
+              <h3 className={styles.right_card__heading}>1</h3>
+              <p className={styles.right_card__text}>Internships</p>
+            </div>
+          </div>
         </div>
       </div>
       <hr className={styles.seperator} />
