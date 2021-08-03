@@ -34,16 +34,16 @@ export default function ContactPage() {
             <p>9870275606</p>
           </div>
           <div className={styles.main_left__social}>
-            <a>
+            <a href="https://github.com/Resolution-1" target="_blank" rel="noopener noreferrer">
               <SiGithub />
             </a>
-            <a>
+            <a href="https://twitter.com/Aayush_Miracle">
               <SiTwitter />
             </a>
-            <a>
+            <a href="https://www.linkedin.com/in/aayush-kumar-738769195/">
               <FaLinkedinIn />
             </a>
-            <a>
+            <a href="https://www.instagram.com/aayush_kumar0808/">
               <FaInstagram />
             </a>
           </div>
