@@ -6,7 +6,7 @@ import { SiGithub } from 'react-icons/si';
 import { SiTwitter } from 'react-icons/si';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-
+import { FaPaperPlane } from 'react-icons/fa';
 
 export default function ContactPage() {
   return (
@@ -34,7 +34,11 @@ export default function ContactPage() {
             <p>9870275606</p>
           </div>
           <div className={styles.main_left__social}>
-            <a href="https://github.com/Resolution-1" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Resolution-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SiGithub />
             </a>
             <a href="https://twitter.com/Aayush_Miracle">
@@ -49,7 +53,24 @@ export default function ContactPage() {
           </div>
         </div>
         <div className={styles.main_right}>
-          <h1>Hello</h1>
+          <form className={styles.form}>
+            <div className={styles.form_container}>
+              <div className={styles.form_input}>
+                <input type="text"  placeholder="YOUR NAME" />
+                <input type="email"  placeholder="YOUR EMAIL" />
+                <input type="text"  placeholder="YOUR SUBJECT" />
+              </div>
+              <div className={styles.form_container__sub}>
+                <textarea className={styles.form_textarea} name="message" placeholder="YOUR MESSAGE" />
+                </div>
+                <a className={styles.button}>
+                  <span className={styles.button_text}>Send Message</span>
+                  <span className={styles.button_icon}>
+                    <FaPaperPlane />
+                  </span>
+                </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
