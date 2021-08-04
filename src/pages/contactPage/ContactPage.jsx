@@ -63,12 +63,12 @@ export default function ContactPage() {
               <div className={styles.form_container__sub}>
                 <textarea className={styles.form_textarea} name="message" placeholder="YOUR MESSAGE" />
                 </div>
-                <a className={styles.button}>
+                <button className={styles.button}>
                   <span className={styles.button_text}>Send Message</span>
                   <span className={styles.button_icon}>
                     <FaPaperPlane />
                   </span>
-                </a>
+                </button>
             </div>
           </form>
         </div>
