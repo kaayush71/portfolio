@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './homepage.module.scss';
-import Personal from '../../assets/personal.png';
+import Personal from '../../assets/personalEdited.png';
+import { TiArrowRightThick } from "react-icons/ti";
 
 const Homepage = () => {
   return (
@@ -25,6 +26,9 @@ const Homepage = () => {
           </p>
           <a href="/" className={styles.button}>
             <span className={styles.button_text}>More About Me</span>
+            <span className={styles.button_icon}>
+              <TiArrowRightThick />
+            </span>
           </a>
         </div>
       </div>
