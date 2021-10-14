@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './aboutPage.module.scss';
 import { TiArrowRightThick } from 'react-icons/ti';
-import { FaBriefcase } from 'react-icons/fa';
+// import { FaBriefcase } from 'react-icons/fa';
 import pdf from '../../assets/myresume.pdf';
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
