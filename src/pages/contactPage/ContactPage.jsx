@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './contactPage.module.scss';
 import { FaEnvelopeOpen } from 'react-icons/fa';
 import { FaPhoneSquare } from 'react-icons/fa';
@@ -9,6 +9,28 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaPaperPlane } from 'react-icons/fa';
 
 export default function ContactPage() {
+  const [data, setData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  }
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    setData({
+      name: '',
+      email: '',
+      subject: '',
+    });
+  }
   return (
     <div className={styles.contact}>
       <div className={styles.title}>
@@ -53,22 +75,44 @@ export default function ContactPage() {
           </div>
         </div>
         <div className={styles.main_right}>
-          <form className={styles.form}>
+          <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.form_container}>
               <div className={styles.form_input}>
-                <input type="text"  placeholder="YOUR NAME" />
-                <input type="email"  placeholder="YOUR EMAIL" />
-                <input type="text"  placeholder="YOUR SUBJECT" />
+                <input
+                  onChange={handleChange}
+                  type="text"
+                  name="name"
+                  value={data.name}
+                  placeholder="YOUR NAME"
+                />
+                <input
+                  onChange={handleChange}
+                  type="email"
+                  name="email"
+                  value={data.email}
+                  placeholder="YOUR EMAIL"
+                />
+                <input
+                  onChange={handleChange}
+                  type="text"
+                  name="subject"
+                  value={data.subject}
+                  placeholder="YOUR SUBJECT"
+                />
               </div>
               <div className={styles.form_container__sub}>
-                <textarea className={styles.form_textarea} name="message" placeholder="YOUR MESSAGE" />
-                </div>
-                <button className={styles.button}>
-                  <span className={styles.button_text}>Send Message</span>
-                  <span className={styles.button_icon}>
-                    <FaPaperPlane />
-                  </span>
-                </button>
+                <textarea
+                  className={styles.form_textarea}
+                  name="message"
+                  placeholder="YOUR MESSAGE"
+                />
+              </div>
+              <button className={styles.button}>
+                <span className={styles.button_text}>Send Message</span>
+                <span className={styles.button_icon}>
+                  <FaPaperPlane />
+                </span>
+              </button>
             </div>
           </form>
         </div>

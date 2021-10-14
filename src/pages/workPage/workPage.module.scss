@@ -1,0 +1,58 @@
+.work {
+  min-height: 100vh;
+  background: #111111;
+  &_container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 768px) {
+    &_container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    &_container {
+      width: 900px;
+    }
+  }
+  @media (min-width: 1200px) {
+    &_container {
+      width: 1170px;
+    }
+  }
+}
+.title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  position: relative;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.heading {
+  color: white;
+  font-size: 56px;
+  font-weight: 900;
+  &_sub {
+    color: var(--red);
+  }
+}
+
+.sub {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 110px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.07);
+  letter-spacing: 0.8rem;
+}
