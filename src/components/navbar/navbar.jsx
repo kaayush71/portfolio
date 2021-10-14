@@ -41,14 +41,6 @@ export default function Navbar() {
         >
           <NavbarIcon contact text="Contact" />
         </NavLink>
-        <NavLink
-          className={styles.link}
-          exact
-          to="/blog"
-          activeClassName={styles.active}
-        >
-          <NavbarIcon blog text="Blogs" />
-        </NavLink>
       </div>
     </section>
   );

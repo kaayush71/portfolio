@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Homepage, AboutPage,ContactPage } from './pages';
+import { Homepage, AboutPage, ContactPage, WorkPage } from './pages';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AOS from 'aos';
@@ -20,6 +20,7 @@ function App() {
             <Route path="/" exact component={Homepage} />
             <Route path="/about" exact component={AboutPage} />
             <Route path="/contact" exact component={ContactPage} />
+            <Route path="/work" exact component={WorkPage} />
           </Switch>
         </Router>
       </div>
