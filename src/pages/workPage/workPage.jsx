@@ -11,6 +11,12 @@ export default function WorkPage() {
           </h1>
           <span className={styles.sub}>Works</span>
         </div>
+        <div className={styles.grid}>
+          <div className={styles.card}>A</div>
+          <div className={styles.card}>A</div>
+          <div className={styles.card}>A</div>
+          <div className={styles.card}>A</div>
+        </div>
       </div>
     </div>
   );
