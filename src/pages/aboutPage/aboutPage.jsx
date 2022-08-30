@@ -210,13 +210,13 @@ export default function AboutPage() {
         </div>
         <hr className={styles.seperator} />
         {/* ====================================================================== */}
-        <div className={styles.exp}>
-          <h1 className={styles.exp__title}>EXPERIENCE & EDUCATION</h1>
-          <div className={styles.exp_wrapper}>
-            <div className={styles.experience}>Aayush</div>
-            <div className={styles.education}>Kumar</div>
-          </div>
-        </div>
+//         <div className={styles.exp}>
+//           <h1 className={styles.exp__title}>EXPERIENCE & EDUCATION</h1>
+//           <div className={styles.exp_wrapper}>
+//             <div className={styles.experience}>Aayush</div>
+//             <div className={styles.education}>Kumar</div>
+//           </div>
+//         </div>
       </div>
     </div>
   );
